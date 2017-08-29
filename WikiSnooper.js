@@ -72,7 +72,7 @@ function visitPage(url, callback) {
        console.log('Word ' + SEARCH_WORD + ' found at page ' + url);
        console.log('My journey took me through ' + numPagesVisited + ' pages in total.');
        ROAD_STRING += ('I was searching for the word "' + SEARCH_WORD + '".');
-       fs.writeFileSync('MyLastSuccessfulRoad.txt', ROAD_STRING);
+       fs.writeFileSync('MyLastSuccessfulPath.txt', ROAD_STRING);
      } else {
        collectInternalLinks($);
        // In this short program, our callback is just calling crawl()
